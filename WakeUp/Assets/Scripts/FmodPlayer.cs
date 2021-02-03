@@ -16,7 +16,7 @@ public class FmodPlayer : MonoBehaviour
 
     private void Start()
     {
-       // Footsteps = FMODUnity.RuntimeManager.CreateInstance("event:/Footsteps");
+        // Footsteps = FMODUnity.RuntimeManager.CreateInstance("event:/Footsteps");
     }
 
     // Update is called once per frame
@@ -24,23 +24,23 @@ public class FmodPlayer : MonoBehaviour
     {
         MaterialCheck();
         Debug.DrawRay(groundCheck.position, Vector3.down * distance, Color.blue);
-        
+
         PlayerLanded();
         wasGrounded = isGrounded();
         isGrounded();
-       
+
         PlayerFallingCheck();
-        
-        
-        
+
+
+
     }
     void MaterialCheck()
     {
-        
+
         hit = Physics2D.Raycast(groundCheck.position, Vector3.down, distance, 1 << 6);
         if (hit.collider)
-         {
-            
+        {
+
             if (hit.collider.CompareTag("Floor"))
             {
                 Material = 0f;
@@ -50,7 +50,7 @@ public class FmodPlayer : MonoBehaviour
                 Material = 1f;
             }
             else Material = 0f;
-         }
+        }
     }
 
     void PlayFootstepsEvent(string path)
@@ -63,42 +63,42 @@ public class FmodPlayer : MonoBehaviour
 
     bool isGrounded()
     {
-      // return hit = Physics2D.Raycast(groundCheck.position, Vector3.down, distance, 1 << 6);
-      return Physics2D.OverlapCircle(groundCheck.position, radius, 1 << 6);
+        // return hit = Physics2D.Raycast(groundCheck.position, Vector3.down, distance, 1 << 6);
+        return Physics2D.OverlapCircle(groundCheck.position, radius, 1 << 6);
 
     }
     void PlayerJump(string path)
     {
 
-            FMOD.Studio.EventInstance Jumping = FMODUnity.RuntimeManager.CreateInstance(path);
-            //Jumping.setParameterByName("Velocity", Height_Difference);
-            //Footsteps.setParameterByName("LowVolume", Height_Difference);
-            Jumping.start();
-            Jumping.release();
-            //Debug.Log(Height_Difference);
-       
+        FMOD.Studio.EventInstance Jumping = FMODUnity.RuntimeManager.CreateInstance(path);
+        Jumping.setParameterByName("Velocity", Height_Difference);
+        //Footsteps.setParameterByName("LowVolume", Height_Difference);
+        Jumping.start();
+        Jumping.release();
+        Debug.Log(Height_Difference);
+
 
     }
     void PlayerLanded()
     {
-        if(isGrounded()&&!wasGrounded)
+        if (isGrounded() && !wasGrounded)
         {
-           FMOD.Studio.EventInstance Landing = FMODUnity.RuntimeManager.CreateInstance("event:/Landing");
-            //Landing.setParameterByName("Velocity", Height_Difference);
+            FMOD.Studio.EventInstance Landing = FMODUnity.RuntimeManager.CreateInstance("event:/Landing");
+            Landing.setParameterByName("Material", Material);
             Landing.start();
             Landing.release();
-            //Debug.Log(Height_Difference);
+            Debug.Log(Height_Difference);
 
         }
     }
     void PlayerFallingCheck()
     {
         oldHeight = Height;
-        Height = transform.position.y;
+        Height = transform.position.x;
         Height_Difference = Height - oldHeight;
-        if(Height_Difference>0)
+        if (Height_Difference != 0)
         {
-            Height_Difference *= -1;
+            Height_Difference = 1;
         }
     }
 }
