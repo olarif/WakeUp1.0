@@ -442,6 +442,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1054741076}
     m_Modifications:
+    - target: {fileID: 3368027604883074934, guid: 39a167b80ae6eaa45b9c1f5fa64f019f, type: 3}
+      propertyPath: OverrideAttenuation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3368027604883074934, guid: 39a167b80ae6eaa45b9c1f5fa64f019f, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3368027604883074934, guid: 39a167b80ae6eaa45b9c1f5fa64f019f, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4766929465321569032, guid: 39a167b80ae6eaa45b9c1f5fa64f019f, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -3511,7 +3523,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &432060711
 Transform:
   m_ObjectHideFlags: 0
@@ -3752,6 +3764,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1054741076}
     m_Modifications:
+    - target: {fileID: 3368027604883074934, guid: 39a167b80ae6eaa45b9c1f5fa64f019f, type: 3}
+      propertyPath: OverrideAttenuation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3368027604883074934, guid: 39a167b80ae6eaa45b9c1f5fa64f019f, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3368027604883074934, guid: 39a167b80ae6eaa45b9c1f5fa64f019f, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4766929465321569032, guid: 39a167b80ae6eaa45b9c1f5fa64f019f, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -10399,6 +10423,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1054741076}
     m_Modifications:
+    - target: {fileID: 3368027604883074934, guid: 39a167b80ae6eaa45b9c1f5fa64f019f, type: 3}
+      propertyPath: OverrideAttenuation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3368027604883074934, guid: 39a167b80ae6eaa45b9c1f5fa64f019f, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3368027604883074934, guid: 39a167b80ae6eaa45b9c1f5fa64f019f, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4766929465321569032, guid: 39a167b80ae6eaa45b9c1f5fa64f019f, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -17912,6 +17948,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1724802141 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5995626319396133077, guid: 86416773259896e499a83dbece52d47b, type: 3}
+  m_PrefabInstance: {fileID: 1792460467}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1724802147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724802141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SpinningGears 2
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 30
 --- !u!1 &1734318966
 GameObject:
   m_ObjectHideFlags: 0
