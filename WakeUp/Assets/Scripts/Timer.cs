@@ -5,17 +5,22 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public float timeStart;
     public Text textBox;
-
-    void Start()
-    {
-        textBox.text = timeStart.ToString("F1");
-    }
+    public static float timer;
+    public static bool timeStarted = false;
 
     void Update()
     {
-        timeStart += Time.deltaTime;
-        textBox.text = timeStart.ToString("F1");
+        if (timeStarted == true)
+        {
+            timer += Time.deltaTime;
+        }
+
+        int minutes = Mathf.FloorToInt(timer / 60F);
+        int seconds = Mathf.FloorToInt(timer - minutes * 60);
+        string niceTime = string.Format("{0:00}:{1:00}", minutes, seconds);
+
+        textBox.text = niceTime;
+
     }
 }
