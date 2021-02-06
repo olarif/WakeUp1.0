@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Timer : MonoBehaviour
 {
@@ -11,10 +12,9 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        if (timeStarted == true)
-        {
-            timer += Time.deltaTime;
-        }
+        timer += Time.deltaTime;
+
+        textBox.text = timer.ToString();
 
         int minutes = Mathf.FloorToInt(timer / 60F);
         int seconds = Mathf.FloorToInt(timer - minutes * 60);
