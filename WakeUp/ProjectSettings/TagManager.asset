@@ -50,3 +50,33 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Outside
+    uniqueID: 2901644861
+    locked: 0
+  - name: Background
+    uniqueID: 1643306629
+    locked: 0
+  - name: Floor
+    uniqueID: 342342087
+    locked: 0
+  - name: Coins
+    uniqueID: 2054285897
+    locked: 0
+  - name: Pistons bhind Gear
+    uniqueID: 2355605955
+    locked: 0
+  - name: Gear
+    uniqueID: 1095860433
+    locked: 0
+  - name: Player
+    uniqueID: 2363572585
+    locked: 0
+  - name: Pistons
+    uniqueID: 712913295
+    locked: 0
+  - name: Checkpoint
+    uniqueID: 4155896815
+    locked: 0
+  - name: Bell
+    uniqueID: 2652705281
+    locked: 0
