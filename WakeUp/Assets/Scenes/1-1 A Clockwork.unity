@@ -954,7 +954,7 @@ GameObject:
   - component: {fileID: 51278396}
   - component: {fileID: 51278395}
   - component: {fileID: 51278394}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PistonUp (1)
   m_TagString: PistonLift
   m_Icon: {fileID: 0}
@@ -8892,7 +8892,7 @@ GameObject:
   - component: {fileID: 776017356}
   - component: {fileID: 776017355}
   - component: {fileID: 776017361}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LongPiston
   m_TagString: PistonLift
   m_Icon: {fileID: 0}
@@ -18049,7 +18049,7 @@ GameObject:
   - component: {fileID: 1670760500}
   - component: {fileID: 1670760499}
   - component: {fileID: 1670760505}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LongPiston (1)
   m_TagString: PistonLift
   m_Icon: {fileID: 0}
@@ -20567,7 +20567,7 @@ GameObject:
   - component: {fileID: 1869737366}
   - component: {fileID: 1869737365}
   - component: {fileID: 1869737364}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PistonUp
   m_TagString: PistonLift
   m_Icon: {fileID: 0}
