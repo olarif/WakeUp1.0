@@ -3527,7 +3527,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &432060711
 Transform:
   m_ObjectHideFlags: 0
@@ -5034,11 +5034,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 561459415258809939, guid: 63bfb4e155d61f4408d4a6591320c00a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.8
+      value: 117.6
       objectReference: {fileID: 0}
     - target: {fileID: 561459415258809939, guid: 63bfb4e155d61f4408d4a6591320c00a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7
+      value: 88.3
       objectReference: {fileID: 0}
     - target: {fileID: 561459415258809939, guid: 63bfb4e155d61f4408d4a6591320c00a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5086,7 +5086,7 @@ PrefabInstance:
       objectReference: {fileID: 1425304887}
     - target: {fileID: 2847331016692851990, guid: 63bfb4e155d61f4408d4a6591320c00a, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63bfb4e155d61f4408d4a6591320c00a, type: 3}
@@ -6784,6 +6784,10 @@ PrefabInstance:
     - target: {fileID: 2485544956699017199, guid: 51f10a4c1fffef1478411488f22eb3c6, type: 3}
       propertyPath: m_Name
       value: DownPiston (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2485544956699017199, guid: 51f10a4c1fffef1478411488f22eb3c6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2821424165397078224, guid: 51f10a4c1fffef1478411488f22eb3c6, type: 3}
       propertyPath: yMax
@@ -11447,7 +11451,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1054741076
 Transform:
   m_ObjectHideFlags: 0
@@ -13461,6 +13465,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: LiftPiston
       objectReference: {fileID: 0}
+    - target: {fileID: 3373506629795055216, guid: 5fa6d52f12249f247b1cd71651db6b6c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3373506629795055216, guid: 5fa6d52f12249f247b1cd71651db6b6c, type: 3}
+      propertyPath: m_TagString
+      value: PistonLift
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fa6d52f12249f247b1cd71651db6b6c, type: 3}
 --- !u!1 &1291714728
@@ -14588,7 +14600,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1416424508
 Transform:
   m_ObjectHideFlags: 0
@@ -15115,6 +15127,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3373506629795055216, guid: 5fa6d52f12249f247b1cd71651db6b6c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3373506629795055216, guid: 5fa6d52f12249f247b1cd71651db6b6c, type: 3}
+      propertyPath: m_TagString
+      value: PistonLift
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fa6d52f12249f247b1cd71651db6b6c, type: 3}
 --- !u!1001 &1458908391
@@ -15616,6 +15636,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: LiftPiston (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3373506629795055216, guid: 5fa6d52f12249f247b1cd71651db6b6c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3373506629795055216, guid: 5fa6d52f12249f247b1cd71651db6b6c, type: 3}
+      propertyPath: m_TagString
+      value: PistonLift
+      objectReference: {fileID: 0}
     - target: {fileID: 6614038805138033242, guid: 5fa6d52f12249f247b1cd71651db6b6c, type: 3}
       propertyPath: m_SortingOrder
       value: 2
@@ -15848,6 +15876,14 @@ PrefabInstance:
     - target: {fileID: 3373506629795055216, guid: 5fa6d52f12249f247b1cd71651db6b6c, type: 3}
       propertyPath: m_Name
       value: LiftPiston
+      objectReference: {fileID: 0}
+    - target: {fileID: 3373506629795055216, guid: 5fa6d52f12249f247b1cd71651db6b6c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3373506629795055216, guid: 5fa6d52f12249f247b1cd71651db6b6c, type: 3}
+      propertyPath: m_TagString
+      value: PistonLift
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fa6d52f12249f247b1cd71651db6b6c, type: 3}
@@ -16180,6 +16216,10 @@ PrefabInstance:
     - target: {fileID: 2485544956699017199, guid: 51f10a4c1fffef1478411488f22eb3c6, type: 3}
       propertyPath: m_Name
       value: DownPiston (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2485544956699017199, guid: 51f10a4c1fffef1478411488f22eb3c6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2821424165397078224, guid: 51f10a4c1fffef1478411488f22eb3c6, type: 3}
       propertyPath: yMax
@@ -20366,6 +20406,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DownPiston (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2485544956699017199, guid: 51f10a4c1fffef1478411488f22eb3c6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2821424165397078224, guid: 51f10a4c1fffef1478411488f22eb3c6, type: 3}
       propertyPath: yMax
       value: 13
@@ -20495,11 +20539,11 @@ PrefabInstance:
       objectReference: {fileID: 1178689107}
     - target: {fileID: 1709769759284797114, guid: 9bb54196981ac5d488925bcaa415a93c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.784532
+      value: 117.61546
       objectReference: {fileID: 0}
     - target: {fileID: 1709769759284797114, guid: 9bb54196981ac5d488925bcaa415a93c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.2001896
+      value: 89.099815
       objectReference: {fileID: 0}
     - target: {fileID: 1709769759284797114, guid: 9bb54196981ac5d488925bcaa415a93c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20613,6 +20657,10 @@ PrefabInstance:
     - target: {fileID: 2485544956699017199, guid: 51f10a4c1fffef1478411488f22eb3c6, type: 3}
       propertyPath: m_Name
       value: DownPiston (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2485544956699017199, guid: 51f10a4c1fffef1478411488f22eb3c6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2821424165397078224, guid: 51f10a4c1fffef1478411488f22eb3c6, type: 3}
       propertyPath: yMax
@@ -21645,6 +21693,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3368027604883074934, guid: 39a167b80ae6eaa45b9c1f5fa64f019f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4766929465321569032, guid: 39a167b80ae6eaa45b9c1f5fa64f019f, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -22612,7 +22664,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2144460780
 Transform:
   m_ObjectHideFlags: 0

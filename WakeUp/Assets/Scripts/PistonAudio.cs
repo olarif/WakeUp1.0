@@ -7,12 +7,15 @@ public class PistonAudio : MonoBehaviour
     private Vector3 pos, oldpos;
     private FMOD.Studio.EventInstance pistonLoop;
     private FMOD.Studio.PLAYBACK_STATE pbState;
-    private float State;
+    private float Direction;
+    
 
     // Start is called before the first frame update
     void Start()
     {
+        CheckPistonDirection();
         pistonLoop = FMODUnity.RuntimeManager.CreateInstance("event:/LaunchingPiston");
+        pistonLoop.setParameterByName("PistonDirection", Direction);
         FMODUnity.RuntimeManager.AttachInstanceToGameObject(pistonLoop, transform, GetComponent<Rigidbody2D>());
        // pistonLoop.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(transform, GetComponent<Rigidbody2D>()));
 
@@ -46,9 +49,12 @@ public class PistonAudio : MonoBehaviour
         }
         oldpos = pos;
     }
-    public void EndSound()
+    public void CheckPistonDirection()
     {
-        pistonLoop.triggerCue();
+        if (gameObject.tag == "PistonLift")
+            Direction = 0f;
+        else
+            Direction = 1f;
     }
      void OnDestroy()
     {

@@ -11,6 +11,8 @@ TagManager:
   - coin
   - GM
   - Floor
+  - PistonLift
+  - PistonDown
   layers:
   - Default
   - TransparentFX
