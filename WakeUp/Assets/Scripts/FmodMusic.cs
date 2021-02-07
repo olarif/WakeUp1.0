@@ -5,19 +5,29 @@ using UnityEngine;
 public class FmodMusic : MonoBehaviour
 {
     private static FMOD.Studio.EventInstance Music;
+    public GameObject pause;
+    FMOD.Studio.PLAYBACK_STATE pbState;
+
 
     // Start is called before the first frame update
     void Start()
     {
         Music = FMODUnity.RuntimeManager.CreateInstance("event:/lvl1_Music");
         Music.start();
-        Music.release();
+        //Music.release();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Music.getPlaybackState(out pbState);
+
+        if(pause.activeInHierarchy&& pbState== FMOD.Studio.PLAYBACK_STATE.PLAYING)
+            Music.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        else if(!pause.activeInHierarchy && pbState == FMOD.Studio.PLAYBACK_STATE.STOPPED)
+            Music.start();
+
+
     }
     private void OnDestroy()
     {
