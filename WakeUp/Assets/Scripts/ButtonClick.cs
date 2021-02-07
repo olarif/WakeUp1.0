@@ -13,6 +13,7 @@ public class ButtonClick : MonoBehaviour
 
     public void Menu()
     {
+        Destroy(GameObject.FindGameObjectWithTag("GM"));
         SceneManager.LoadScene("Menu");
     }
 }

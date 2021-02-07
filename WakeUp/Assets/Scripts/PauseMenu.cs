@@ -39,6 +39,11 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = true;
     }
 
+    public void Restart()
+    {
+        SceneManager.LoadScene("1-1 A Clockwork");
+    }
+
     public void LoadMenu()
     {
         FMODUnity.RuntimeManager.PlayOneShotAttached("event:/UI/OpenMenu", gameObject);
