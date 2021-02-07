@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/1-1 A Clockwork.unity
     guid: 251491b32f2b30f498377207387a2e58
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: 18f89b0870366974d817405783bbf63d
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: da8dea93b556faa4c81f0b02a998d991
   m_configObjects: {}

@@ -208,12 +208,14 @@ public class PlayerMovement : MonoBehaviour
         if (collision.tag == "Bell")
         {
             flying = false;
-            transform.position = spawnPoint.transform.position;
+            //transform.position = spawnPoint.transform.position;
+            SceneManager.LoadScene("Win");
         }
 
         if (collision.tag == "dead")
         {
-            PlayerDead();
+            SceneManager.LoadScene("GameOver");
+            //PlayerDead();
         }
     }
 
