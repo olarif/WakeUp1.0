@@ -7,6 +7,7 @@ public class TriggerAudio : MonoBehaviour
     [FMODUnity.EventRef]
     public string Event;
     public bool PlayOnAwake;
+    public bool playOnDestroy;
 
     public void playOneShot()
     {
@@ -19,4 +20,12 @@ public class TriggerAudio : MonoBehaviour
         if (PlayOnAwake)
             playOneShot();
     }
+
+    private void OnDestroy()
+    {
+        if (playOnDestroy)
+            playOneShot();
+        
+    }
+
 }

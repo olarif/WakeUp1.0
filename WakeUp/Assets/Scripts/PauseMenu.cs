@@ -18,6 +18,7 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            FMODUnity.RuntimeManager.PlayOneShotAttached("event:/UI/OpenMenu", gameObject);
             if (GameIsPaused)
             {
                 Resume();
@@ -45,6 +46,7 @@ public class PauseMenu : MonoBehaviour
 
     public void LoadMenu()
     {
+        FMODUnity.RuntimeManager.PlayOneShotAttached("event:/UI/OpenMenu", gameObject);
         SceneManager.LoadScene("Menu");
         Resume();
         Destroy(GameObject.FindGameObjectWithTag("GM"));
