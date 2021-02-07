@@ -17881,6 +17881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 058a74f5d77d88f4581a54396ad034c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pause: {fileID: 2035038419}
 --- !u!1 &1419686577
 GameObject:
   m_ObjectHideFlags: 0
@@ -26729,6 +26730,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2035038419 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 409945136457454609, guid: 7a8b261847f48874789b1af130bef228, type: 3}
+  m_PrefabInstance: {fileID: 233149375}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2040102977
 GameObject:
   m_ObjectHideFlags: 0
