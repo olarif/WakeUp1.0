@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 8.799103, y: 45.42961}
+  m_AnchoredPosition: {x: 8.799072, y: 45.429565}
   m_SizeDelta: {x: 65.1741, y: 28.661}
   m_Pivot: {x: 0.635, y: 2.31}
 --- !u!222 &7181838942051805848
@@ -90,6 +90,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5581991602390488847}
+  - component: {fileID: 5134217980083751412}
   m_Layer: 5
   m_Name: Pause Menu
   m_TagString: Untagged
@@ -120,6 +121,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5134217980083751412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409945136457454609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08af58a15c3aecf4c8799830d4f4b6d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/UI/OpenMenu
+  PlayOnAwake: 1
 --- !u!1 &799652356304011005
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,6 +147,7 @@ GameObject:
   - component: {fileID: 5913604701317103245}
   - component: {fileID: 1436069894100679424}
   - component: {fileID: 2200091484201041734}
+  - component: {fileID: 7751995157636230267}
   m_Layer: 5
   m_Name: ResumeButton
   m_TagString: Untagged
@@ -253,6 +269,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7751995157636230267}
+        m_TargetAssemblyTypeName: TriggerAudio, Assembly-CSharp
+        m_MethodName: playOneShot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7751995157636230267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799652356304011005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08af58a15c3aecf4c8799830d4f4b6d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/UI/PlayButton
+  PlayOnAwake: 0
 --- !u!1 &824510371991077162
 GameObject:
   m_ObjectHideFlags: 0
@@ -694,6 +736,7 @@ GameObject:
   - component: {fileID: 7793958839639083798}
   - component: {fileID: 6046218017797861432}
   - component: {fileID: 6972275689398482041}
+  - component: {fileID: 3275678858031208790}
   m_Layer: 5
   m_Name: MenuButton
   m_TagString: Untagged
@@ -815,6 +858,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3275678858031208790}
+        m_TargetAssemblyTypeName: TriggerAudio, Assembly-CSharp
+        m_MethodName: playOneShot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3275678858031208790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3122136956962743723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08af58a15c3aecf4c8799830d4f4b6d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/UI/QuitButton
+  PlayOnAwake: 0
 --- !u!1 &3989685204054002119
 GameObject:
   m_ObjectHideFlags: 0
@@ -849,7 +918,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -13.727905, y: 44.23677}
+  m_AnchoredPosition: {x: -13.728027, y: 44.236816}
   m_SizeDelta: {x: 76.26953, y: 76.2695}
   m_Pivot: {x: 0.32, y: 1.08}
 --- !u!222 &5242567935929169004
@@ -1533,6 +1602,7 @@ GameObject:
   - component: {fileID: 6698513621944474849}
   - component: {fileID: 2623022469372781860}
   - component: {fileID: 3415462234186273623}
+  - component: {fileID: 1581409273504564695}
   m_Layer: 5
   m_Name: QuitButton
   m_TagString: Untagged
@@ -1654,3 +1724,29 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1581409273504564695}
+        m_TargetAssemblyTypeName: TriggerAudio, Assembly-CSharp
+        m_MethodName: playOneShot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1581409273504564695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109208644580528787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08af58a15c3aecf4c8799830d4f4b6d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/UI/QuitButton
+  PlayOnAwake: 0
