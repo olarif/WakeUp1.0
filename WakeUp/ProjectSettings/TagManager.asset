@@ -65,6 +65,9 @@ TagManager:
   - name: Pistons bhind Gear
     uniqueID: 2355605955
     locked: 0
+  - name: Gear 2
+    uniqueID: 3743845185
+    locked: 0
   - name: Gear
     uniqueID: 1095860433
     locked: 0
