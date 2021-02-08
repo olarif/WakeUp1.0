@@ -41,6 +41,8 @@ public class PauseMenu : MonoBehaviour
 
     public void Restart()
     {
+        Destroy(GameObject.FindGameObjectWithTag("GM"));
+        Resume();
         SceneManager.LoadScene("1-1 A Clockwork");
     }
 

@@ -8,6 +8,7 @@ public class ButtonClick : MonoBehaviour
 {
     public void PlayGame()
     {
+        Destroy(GameObject.FindGameObjectWithTag("GM"));
         SceneManager.LoadScene("1-1 A Clockwork");
     }
 

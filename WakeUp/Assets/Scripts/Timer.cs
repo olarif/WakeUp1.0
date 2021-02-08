@@ -10,6 +10,11 @@ public class Timer : MonoBehaviour
     public static float timer;
     public static bool timeStarted = false;
 
+    private void Start()
+    {
+        timer = 0;
+    }
+
     void Update()
     {
         timer += Time.deltaTime;
