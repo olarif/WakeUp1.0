@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FmodMusic : MonoBehaviour
 {
-    private static FMOD.Studio.EventInstance backgroundMusic,sleepMusic;
+    private static FMOD.Studio.EventInstance backgroundMusic;
     public GameObject pause,win,sleep;
     FMOD.Studio.PLAYBACK_STATE pbState;
 

@@ -21,11 +21,15 @@ public class DeathMenuSound : MonoBehaviour
         Death = GameObject.FindGameObjectWithTag("DeathMenu");
         Music.getPlaybackState(out pbState);
 
+        MusicCheck();
+
+    }
+    private void MusicCheck()
+    {
         if (Death == null && pbState == FMOD.Studio.PLAYBACK_STATE.PLAYING)
             Music.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         else if (Death != null && pbState == FMOD.Studio.PLAYBACK_STATE.STOPPED)
             Music.start();
-
     }
     private void OnDestroy()
     {
