@@ -11,7 +11,7 @@ public class Coin : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            ScoreManager.instance.ChangeScore(coinValue);
+            GameManager1.instance.ChangeScore(coinValue);
             GetCoinSound();
         }
     }

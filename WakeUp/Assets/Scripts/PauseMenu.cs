@@ -58,5 +58,20 @@ public class PauseMenu : MonoBehaviour
     {
         Application.Quit();
     }
+    public void PauseFunction()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            FMODUnity.RuntimeManager.PlayOneShotAttached("event:/UI/OpenMenu", gameObject);
+            if (GameIsPaused)
+            {
+                Resume();
+            }
+            else
+            {
+                Pause();
+            }
+        }
+    }
 
 }

@@ -28,4 +28,16 @@ public class Timer : MonoBehaviour
         textBox.text = niceTime;
 
     }
+    public void TimerUpdate()
+    {
+        timer += Time.deltaTime;
+
+        textBox.text = timer.ToString();
+
+        int minutes = Mathf.FloorToInt(timer / 60F);
+        int seconds = Mathf.FloorToInt(timer - minutes * 60);
+        string niceTime = string.Format("{0:00}:{1:00}", minutes, seconds);
+
+        textBox.text = niceTime;
+    }
 }
