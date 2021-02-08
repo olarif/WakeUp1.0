@@ -7236,11 +7236,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 561459415258809939, guid: 63bfb4e155d61f4408d4a6591320c00a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.83
+      value: -13.2
       objectReference: {fileID: 0}
     - target: {fileID: 561459415258809939, guid: 63bfb4e155d61f4408d4a6591320c00a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.66
+      value: -3.9
       objectReference: {fileID: 0}
     - target: {fileID: 561459415258809939, guid: 63bfb4e155d61f4408d4a6591320c00a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7304,7 +7304,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2847331016692851990, guid: 63bfb4e155d61f4408d4a6591320c00a, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63bfb4e155d61f4408d4a6591320c00a, type: 3}
@@ -16207,8 +16207,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 4.6
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 10
+  OverrideMaxDistance: 35
 --- !u!4 &1111662964 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4766929465321569032, guid: 39a167b80ae6eaa45b9c1f5fa64f019f, type: 3}
@@ -16335,8 +16335,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 4.6
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 10
+  OverrideMaxDistance: 35
 --- !u!4 &1118404218 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4766929465321569032, guid: 39a167b80ae6eaa45b9c1f5fa64f019f, type: 3}
@@ -18917,8 +18917,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 4.6
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 10
+  OverrideMaxDistance: 35
 --- !u!1001 &1301925498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19184,8 +19184,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 4.6
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 10
+  OverrideMaxDistance: 35
 --- !u!1 &1320835893
 GameObject:
   m_ObjectHideFlags: 0
@@ -24900,8 +24900,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 4.6
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 10
+  OverrideMaxDistance: 35
 --- !u!1001 &1734312599
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28759,11 +28759,11 @@ PrefabInstance:
       objectReference: {fileID: 1178689107}
     - target: {fileID: 1709769759284797114, guid: 9bb54196981ac5d488925bcaa415a93c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.814531
+      value: -13.184531
       objectReference: {fileID: 0}
     - target: {fileID: 1709769759284797114, guid: 9bb54196981ac5d488925bcaa415a93c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.8601894
+      value: -3.10019
       objectReference: {fileID: 0}
     - target: {fileID: 1709769759284797114, guid: 9bb54196981ac5d488925bcaa415a93c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -30368,8 +30368,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 4.6
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 10
+  OverrideMaxDistance: 35
 --- !u!4 &2095323189 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6407772399373850277, guid: 0df57e3906503d24fbe9990890776661, type: 3}
