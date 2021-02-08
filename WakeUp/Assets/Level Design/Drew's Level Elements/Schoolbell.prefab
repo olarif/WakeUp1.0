@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8780207336701511260}
   - component: {fileID: 8780207336701511261}
   - component: {fileID: 5583598216449619619}
+  - component: {fileID: 4948610369031327504}
   m_Layer: 0
   m_Name: Schoolbell
   m_TagString: dead
@@ -109,3 +110,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.89, y: 5.64}
   m_EdgeRadius: 0
+--- !u!114 &4948610369031327504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8780207336701511263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecadd4efd0cf77c4499d88cdb3cac76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/WinSound

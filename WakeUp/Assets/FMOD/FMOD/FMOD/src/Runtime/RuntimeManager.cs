@@ -46,6 +46,11 @@ namespace FMODUnity
             return FMOD.RESULT.OK;
         }
 
+        public static void AttachInstanceToGameObject(FMOD.Studio.EventInstance sFX, Transform transform)
+        {
+            throw new NotImplementedException();
+        }
+
         static RuntimeManager Instance
         {
             get

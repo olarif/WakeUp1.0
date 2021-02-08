@@ -214,7 +214,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (collision.tag == "dead")
         {
-            SceneManager.LoadScene("GameOver");
+           SceneManager.LoadScene("GameOver");
+
             //PlayerDead();
         }
     }

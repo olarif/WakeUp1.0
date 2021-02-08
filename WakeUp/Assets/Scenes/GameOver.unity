@@ -134,6 +134,8 @@ GameObject:
   - component: {fileID: 234139237}
   - component: {fileID: 234139239}
   - component: {fileID: 234139238}
+  - component: {fileID: 234139240}
+  - component: {fileID: 234139241}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -198,6 +200,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 234139236}
   m_CullTransparentMesh: 1
+--- !u!114 &234139240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234139236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08af58a15c3aecf4c8799830d4f4b6d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/DeathMenu
+  PlayOnAwake: 1
+  playOnDestroy: 0
+--- !u!114 &234139241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234139236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6495222e2cf0a2045a2b030939f2e51a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  play:
+    m_Handle: 0
 --- !u!1 &245045159
 GameObject:
   m_ObjectHideFlags: 0
