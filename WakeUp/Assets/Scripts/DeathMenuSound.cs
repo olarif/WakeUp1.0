@@ -6,22 +6,26 @@ using UnityEngine.SceneManagement;
 public class DeathMenuSound : MonoBehaviour
 {
     private static FMOD.Studio.EventInstance Music;
+    FMOD.Studio.PLAYBACK_STATE pbState;
+    public GameObject Death;
     // Start is called before the first frame update
-    public Scene play;
     void Start()
     {
-        play = SceneManager.GetSceneAt(1);
+       
         Music = FMODUnity.RuntimeManager.CreateInstance("event:/DeathMenu");
         
         Music.start();
     }
     private void Update()
     {
-        if(play.isLoaded)
-        {
+        Death = GameObject.FindGameObjectWithTag("DeathMenu");
+        Music.getPlaybackState(out pbState);
+
+        if (Death == null && pbState == FMOD.Studio.PLAYBACK_STATE.PLAYING)
             Music.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-            Music.release();
-        }
+        else if (Death != null && pbState == FMOD.Studio.PLAYBACK_STATE.STOPPED)
+            Music.start();
+
     }
     private void OnDestroy()
     {

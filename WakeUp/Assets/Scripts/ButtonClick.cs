@@ -17,4 +17,10 @@ public class ButtonClick : MonoBehaviour
         Destroy(GameObject.FindGameObjectWithTag("GM"));
         SceneManager.LoadScene("Menu");
     }
+    public void Restart()
+    {
+        Destroy(GameObject.FindGameObjectWithTag("GM"));
+        SceneManager.LoadScene("1-1 A Clockwork");
+    }
+
 }

@@ -12,12 +12,7 @@ public class FmodPlayer : MonoBehaviour
     RaycastHit2D hit;
 
     private float Height, oldHeight, Height_Difference;
-    //FMOD.Studio.EventInstance Footsteps;
 
-    private void Start()
-    {
-        // Footsteps = FMODUnity.RuntimeManager.CreateInstance("event:/Footsteps");
-    }
 
     // Update is called once per frame
     void FixedUpdate()

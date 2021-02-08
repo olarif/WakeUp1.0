@@ -15,7 +15,6 @@ public class MainMenu : MonoBehaviour
         //load next scene in line
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
-        //SceneManager.LoadScene("Prototype");
     }
 
     public void QuitGame()

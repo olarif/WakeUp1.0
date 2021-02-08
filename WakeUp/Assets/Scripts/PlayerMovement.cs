@@ -209,12 +209,14 @@ public class PlayerMovement : MonoBehaviour
         {
             flying = false;
             //transform.position = spawnPoint.transform.position;
-            SceneManager.LoadScene("Win");
+            // SceneManager.LoadScene("Win");
+            GameManager1.instance.isGameOver(true);
         }
 
         if (collision.tag == "dead")
         {
-           SceneManager.LoadScene("GameOver");
+          // SceneManager.LoadScene("GameOver");
+            GameManager1.instance.isGameOver(false);
 
             //PlayerDead();
         }
