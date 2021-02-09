@@ -15,7 +15,7 @@ public class GameManager1 : MonoBehaviour
     private WaitForSeconds Onesec;
     private float m_StartDelay = 1f;
     private float m_EndDelay=0.5f;
-    private int score;
+    public static int score;
     private bool isDead;
     public TextMeshProUGUI text;
 
