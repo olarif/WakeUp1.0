@@ -18,7 +18,6 @@ public class GameManager1 : MonoBehaviour
     private int score;
     private bool isDead;
     public TextMeshProUGUI text;
-    FMOD.Studio.Bus Master;
 
     public static bool GameOver=false;
     public GameObject m_canvas;
@@ -46,7 +45,7 @@ public class GameManager1 : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
-        Master = FMODUnity.RuntimeManager.GetBus("Bus:/");
+        
         m_StartWait = new WaitForSeconds(m_StartDelay);
         m_EndingWait = new WaitForSeconds(m_EndDelay);
         Onesec = new WaitForSeconds(1f);
@@ -179,7 +178,6 @@ public class GameManager1 : MonoBehaviour
     public void Sleep()
     {
         GameOverScreen.SetActive(true);
-        Master.stopAllEvents(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         Time.timeScale = 0f;
     }
     public void Restart()
@@ -190,7 +188,6 @@ public class GameManager1 : MonoBehaviour
 
     public void LoadMenu()
     {
-
         FMODUnity.RuntimeManager.PlayOneShotAttached("event:/UI/OpenMenu", gameObject);
         SceneManager.LoadScene("Menu");
         Resume();
