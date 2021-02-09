@@ -3472,6 +3472,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -75.60034
       objectReference: {fileID: 0}
+    - target: {fileID: 3537375318418758727, guid: 7a8b261847f48874789b1af130bef228, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -5.0117188
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537375318418758727, guid: 7a8b261847f48874789b1af130bef228, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -25.300049
+      objectReference: {fileID: 0}
     - target: {fileID: 6139475613830342074, guid: 7a8b261847f48874789b1af130bef228, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -17628,7 +17636,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3802552673915602085, guid: bb3ea0771be866e4b990ab9800786153, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
-      value: 18
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3802552673915602085, guid: bb3ea0771be866e4b990ab9800786153, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
@@ -17768,11 +17776,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3802552673915602085, guid: bb3ea0771be866e4b990ab9800786153, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[17].x
-      value: 24.252127
+      value: 25.61156
       objectReference: {fileID: 0}
     - target: {fileID: 3802552673915602085, guid: bb3ea0771be866e4b990ab9800786153, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[17].y
-      value: 68.77499
+      value: 24.688675
+      objectReference: {fileID: 0}
+    - target: {fileID: 3802552673915602085, guid: bb3ea0771be866e4b990ab9800786153, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[18].x
+      value: 25.505413
+      objectReference: {fileID: 0}
+    - target: {fileID: 3802552673915602085, guid: bb3ea0771be866e4b990ab9800786153, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[18].y
+      value: 54.44155
+      objectReference: {fileID: 0}
+    - target: {fileID: 3802552673915602085, guid: bb3ea0771be866e4b990ab9800786153, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[19].x
+      value: 26.785795
+      objectReference: {fileID: 0}
+    - target: {fileID: 3802552673915602085, guid: bb3ea0771be866e4b990ab9800786153, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[19].y
+      value: 69.56676
       objectReference: {fileID: 0}
     - target: {fileID: 8198953234320898544, guid: bb3ea0771be866e4b990ab9800786153, type: 3}
       propertyPath: m_RootOrder
