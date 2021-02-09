@@ -105,10 +105,10 @@ public class PlayerMovement : MonoBehaviour
         //toggle flying
         if (Input.GetKeyDown("f"))
         {
-            flying = !flying;
+            //flying = !flying;
         }
 
-        if (flying) Fly();
+        //if (flying) Fly();
     }
 
     private void FixedUpdate()
