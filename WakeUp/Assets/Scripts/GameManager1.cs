@@ -29,6 +29,7 @@ public class GameManager1 : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI,WinScreen,GameOverScreen;
+    FMOD.Studio.Bus Master;
 
     private void Awake()
     {
@@ -44,6 +45,7 @@ public class GameManager1 : MonoBehaviour
     }
     private void Start()
     {
+        Master = FMODUnity.RuntimeManager.GetBus("bus:/SoundEffects");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
         
         m_StartWait = new WaitForSeconds(m_StartDelay);
@@ -88,12 +90,14 @@ public class GameManager1 : MonoBehaviour
       
         while (!GameOver)
         {
+           
             yield return null;
         }
 
     }
     private IEnumerator RoundEnding()
     {
+        
         Debug.Log("GameOver");
         if (isDead)
             Sleep();
@@ -172,11 +176,13 @@ public class GameManager1 : MonoBehaviour
     }
     public void Win()
     {
+        Master.stopAllEvents(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         WinScreen.SetActive(true);
         Time.timeScale = 0f;
     }
     public void Sleep()
     {
+        Master.stopAllEvents(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         GameOverScreen.SetActive(true);
         Time.timeScale = 0f;
     }

@@ -1179,7 +1179,7 @@ GameObject:
   - component: {fileID: 67613298}
   m_Layer: 0
   m_Name: ChainGears_3
-  m_TagString: Untagged
+  m_TagString: Gear
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2207,6 +2207,14 @@ PrefabInstance:
     - target: {fileID: 5995626319396133077, guid: 86416773259896e499a83dbece52d47b, type: 3}
       propertyPath: m_Name
       value: Gear (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5995626319396133077, guid: 86416773259896e499a83dbece52d47b, type: 3}
+      propertyPath: m_TagString
+      value: Gear
+      objectReference: {fileID: 0}
+    - target: {fileID: 6216993830186649402, guid: 86416773259896e499a83dbece52d47b, type: 3}
+      propertyPath: m_TagString
+      value: Gear
       objectReference: {fileID: 0}
     - target: {fileID: 9151559040615583753, guid: 86416773259896e499a83dbece52d47b, type: 3}
       propertyPath: speed
@@ -7217,6 +7225,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gear
       objectReference: {fileID: 0}
+    - target: {fileID: 5995626319396133077, guid: 86416773259896e499a83dbece52d47b, type: 3}
+      propertyPath: m_TagString
+      value: Gear
+      objectReference: {fileID: 0}
+    - target: {fileID: 6216993830186649402, guid: 86416773259896e499a83dbece52d47b, type: 3}
+      propertyPath: m_TagString
+      value: Gear
+      objectReference: {fileID: 0}
     - target: {fileID: 9151559040615583753, guid: 86416773259896e499a83dbece52d47b, type: 3}
       propertyPath: speed
       value: -0.5
@@ -8243,7 +8259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7569106262018820367, guid: 5e23442bde6f7f84eb1beb6f33a3be7a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.4
+      value: -3.2
       objectReference: {fileID: 0}
     - target: {fileID: 7569106262018820367, guid: 5e23442bde6f7f84eb1beb6f33a3be7a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11573,7 +11589,7 @@ GameObject:
   - component: {fileID: 713939904}
   m_Layer: 0
   m_Name: ChainGears_1.5
-  m_TagString: Untagged
+  m_TagString: Gear
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14539,7 +14555,7 @@ GameObject:
   - component: {fileID: 909177995}
   m_Layer: 0
   m_Name: ChainGears_2
-  m_TagString: Untagged
+  m_TagString: Gear
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15676,6 +15692,91 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6407772399373850277, guid: 0df57e3906503d24fbe9990890776661, type: 3}
   m_PrefabInstance: {fileID: 1575351422}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &969613890
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8780207336701511260, guid: 8789b5b3d1b185c40a664b52ed176e44, type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780207336701511260, guid: 8789b5b3d1b185c40a664b52ed176e44, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0485661
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780207336701511260, guid: 8789b5b3d1b185c40a664b52ed176e44, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0485661
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780207336701511260, guid: 8789b5b3d1b185c40a664b52ed176e44, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0485661
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780207336701511260, guid: 8789b5b3d1b185c40a664b52ed176e44, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780207336701511260, guid: 8789b5b3d1b185c40a664b52ed176e44, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780207336701511260, guid: 8789b5b3d1b185c40a664b52ed176e44, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780207336701511260, guid: 8789b5b3d1b185c40a664b52ed176e44, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780207336701511260, guid: 8789b5b3d1b185c40a664b52ed176e44, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780207336701511260, guid: 8789b5b3d1b185c40a664b52ed176e44, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780207336701511260, guid: 8789b5b3d1b185c40a664b52ed176e44, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780207336701511260, guid: 8789b5b3d1b185c40a664b52ed176e44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780207336701511260, guid: 8789b5b3d1b185c40a664b52ed176e44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780207336701511260, guid: 8789b5b3d1b185c40a664b52ed176e44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780207336701511261, guid: 8789b5b3d1b185c40a664b52ed176e44, type: 3}
+      propertyPath: m_SortingLayer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780207336701511261, guid: 8789b5b3d1b185c40a664b52ed176e44, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1642262015
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780207336701511263, guid: 8789b5b3d1b185c40a664b52ed176e44, type: 3}
+      propertyPath: m_Name
+      value: Schoolbell (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780207336701511263, guid: 8789b5b3d1b185c40a664b52ed176e44, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780207336701511263, guid: 8789b5b3d1b185c40a664b52ed176e44, type: 3}
+      propertyPath: m_TagString
+      value: Bell
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8789b5b3d1b185c40a664b52ed176e44, type: 3}
 --- !u!1001 &971643486
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16226,7 +16327,7 @@ GameObject:
   - component: {fileID: 1005296344}
   m_Layer: 0
   m_Name: TopGears
-  m_TagString: Untagged
+  m_TagString: Gear
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17176,7 +17277,7 @@ GameObject:
   - component: {fileID: 1048738134}
   m_Layer: 0
   m_Name: HelicalGears
-  m_TagString: Untagged
+  m_TagString: Gear
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23640,7 +23741,7 @@ GameObject:
   - component: {fileID: 1531147774}
   m_Layer: 0
   m_Name: ChainGears_1
-  m_TagString: Untagged
+  m_TagString: Gear
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24606,6 +24707,14 @@ PrefabInstance:
     - target: {fileID: 5995626319396133077, guid: 86416773259896e499a83dbece52d47b, type: 3}
       propertyPath: m_Name
       value: Gear (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5995626319396133077, guid: 86416773259896e499a83dbece52d47b, type: 3}
+      propertyPath: m_TagString
+      value: Gear
+      objectReference: {fileID: 0}
+    - target: {fileID: 6216993830186649402, guid: 86416773259896e499a83dbece52d47b, type: 3}
+      propertyPath: m_TagString
+      value: Gear
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86416773259896e499a83dbece52d47b, type: 3}
@@ -25750,7 +25859,7 @@ GameObject:
   - component: {fileID: 1644044154}
   m_Layer: 0
   m_Name: ChainGears_4
-  m_TagString: Untagged
+  m_TagString: Gear
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29946,7 +30055,7 @@ GameObject:
   - component: {fileID: 1945957206}
   m_Layer: 0
   m_Name: FirstGear
-  m_TagString: Untagged
+  m_TagString: Gear
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31356,7 +31465,7 @@ GameObject:
   - component: {fileID: 2036024543}
   m_Layer: 0
   m_Name: MiddlePartGears
-  m_TagString: Untagged
+  m_TagString: Gear
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -33,10 +33,7 @@ public class FmodMusic : MonoBehaviour
 
 
     }
-    private void OnDestroy()
-    {
-        backgroundMusic.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-    }
+
     private void pauseCheck()
     {
         if ((pause != null) && pbState == FMOD.Studio.PLAYBACK_STATE.PLAYING)
@@ -66,5 +63,11 @@ public class FmodMusic : MonoBehaviour
         }
             
     }
+    private void OnDestroy()
+    {
+        backgroundMusic.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        backgroundMusic.release();
+    }
+
 
 }

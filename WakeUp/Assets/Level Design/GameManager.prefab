@@ -4230,10 +4230,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4164023568579493839}
-  - component: {fileID: 1291536827169549885}
+  - component: {fileID: 1750968781270247460}
   m_Layer: 5
   m_Name: GameOver
-  m_TagString: PauseMenu
+  m_TagString: DeathMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4259,7 +4259,7 @@ RectTransform:
   m_AnchoredPosition: {x: -0.00024414062, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1291536827169549885
+--- !u!114 &1750968781270247460
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4271,7 +4271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6495222e2cf0a2045a2b030939f2e51a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Death: {fileID: 0}
+  Death: {fileID: 8213484412030999325}
 --- !u!1 &8385129505268250413
 GameObject:
   m_ObjectHideFlags: 0
@@ -4359,7 +4359,7 @@ GameObject:
   - component: {fileID: 4431920058335771195}
   m_Layer: 5
   m_Name: WinMenu
-  m_TagString: PauseMenu
+  m_TagString: WinMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
