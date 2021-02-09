@@ -60,6 +60,9 @@ TagManager:
   - name: Background
     uniqueID: 1643306629
     locked: 0
+  - name: OOB
+    uniqueID: 897720279
+    locked: 0
   - name: Floor
     uniqueID: 342342087
     locked: 0
